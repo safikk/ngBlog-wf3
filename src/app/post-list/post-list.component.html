@@ -1,6 +1,6 @@
 <ul class="list-group">
-  <app-post></app-post>
-  <app-post></app-post>
-  <app-post></app-post>
-  <app-post></app-post>
+  <app-post *ngFor="let p of posts"
+            [post] = "p"
+  ></app-post>
+
 </ul>
